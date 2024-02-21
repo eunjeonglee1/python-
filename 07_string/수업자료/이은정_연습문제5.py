@@ -35,11 +35,20 @@ print('{0:>10s}'.format('python'))
 #3. 정답 :
 str1 = 'this is'
 str2 = 'PythON'
-print(str1.lower().title()+' '+str2.upper())
+print(str1.title()+' '+str2.upper())
 
 #4. 정답 :
 x=input('문자열을 입력하세요: ')
 print(x.replace('o','$'))
+
+#replace코드 사용 못할시 for문으로도 입력가능
+temp=''
+for ch in text:
+    if ch == 's':
+        temp+='$'
+    else:
+        temp += ch
+print(temp)
 
 
 
@@ -67,19 +76,38 @@ x=date.today()  #현재 날짜에서 10년 더하는걸로 나옴(날짜지정X)
 print(type(x))
 print(x+timedelta(days=365*10))
 '''
-'''
+
 from datetime import datetime, date, timedelta
 x=input('날짜(연/월/일) 입력: ')
 print('split():',x.split('/'))
 y=x.split('/')
-print(y,type(y))
-a,b,c = y
-print(a,b,c,type(a))
-print(x+timedelta(days=365*10))
+year=int(y[0])
+m=int(y[1])
+d=int(y[2])
+print(year,type(y),m,type(m),d,type(d))
+print({year}+timedelta(days=365*10))
 
-'''
+
+"""
+from datetime import datetime, timedelta, date
+date2=input('날짜 입력(연/월/일):')
+date2=datetime.strptime(date2,'%Y/%m/%d')
+# print(type(date2))
+print(f'10년 뒤: {date2.year+10}년 {date2.month}월 {date2.day}일')
+
+# from datetime import date,timedelta 10년후 계산이라 쓸 필요가 없었음
+momentIn=input('날짜(연/월/일) 입력 : ')
+temp=momentIn.split('/')
+year=int(temp[0])
+month=int(temp[1])
+date=int(temp[2])
+year10=year+10
+print(f'입력한 날짜의 10년 후 => {year10}년 {month}월 {date}일')
+
+
+
 #6. 정답 :
-
+#내가 작성한 코드
 x=input('숫자를 여러개 입력하세요.')
 for text in x[::1]:
     if int(text)>0:
@@ -87,6 +115,22 @@ for text in x[::1]:
         print('\u2764'*n)
     else:
         pass
+
+#강사님이 수정해주신 코드
+x=input('숫자를 여러개 입력하세요.')
+for text in x:
+    n= int(text)
+    if n>0:
+        print('\u2764'*n)
+
+nums=input("숫자를 여러 개 입력하세요.")
+for h in range(len(nums)):
+	print(int(nums[h])*'\u2665')
+
+heart = '\u2665'
+iter = input('숫자를 여러개 입력하세요.')
+for n in iter:
+    print(heart * int(n))
 
 #
 # x=int(input('숫자를 여러개 입력하세요.'))
@@ -98,3 +142,4 @@ for text in x[::1]:
 # x=input('숫자를 여러개 입력하세요.')
 # for text in x[::1]:
 #     print(text)
+"""

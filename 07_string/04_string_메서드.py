@@ -12,7 +12,7 @@ print('대문자로',text1.upper())
 print('소문자로',text1.lower())
 print('단어별로 시작문자 대문자로',text2.lower().title())
 print('문장의 첫글자만 대문자로',text1.upper().capitalize())
-print('swapcase()',text1.swapcase())
+print('서로 반대(대, 소문자)의 문자로 변경 swapcase()',text1.swapcase())
 
 # 2. 문자열 검색
 # count(단어),find(단어,rfind(),index(),rindex(), startswith(), endtwith()
@@ -48,7 +48,7 @@ print('replace():',text5.replace('ham','hom'))
 print(text4)
 print('split():',text4.split())
 print('split():',text4.split(','))
-print('rplit():',text4.rsplit())
+print('rsplit():',text4.rsplit())
 
 text8='apple banana kiwi'
 date=text8.split()
