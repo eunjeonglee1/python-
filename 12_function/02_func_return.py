@@ -17,6 +17,7 @@ def multi_return():
 # print(value,type(value))
 # print(w,h,area)
 
+# 리스트 반환
 def gat_names():
     names=[]
     for i in range(3):
@@ -27,6 +28,7 @@ def gat_names():
 names=gat_names()
 print(names)
 
+# 딕셔너리 반환
 def get_info():
     name=input('이름입력:')
     age=input('나이:')

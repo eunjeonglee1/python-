@@ -4,7 +4,7 @@ a=[0,1,2,3,4]
 print(a[:3],a[:-3])
 print(a[::-1])
 
-#2) 정답 : [["egg", "salad", "bread"],["lamb","chicken"],"apple"]
+#2) 정답 : [["egg", "salad", "bread"],["lamb","chicken"],["apple"]]
 first = ["egg", "salad", "bread", "soup", "canafe"]
 second = ["fish", "lamb", "pork", "beef", "chicken"]
 third = ["apple", "banana", "orange", "grape", "mango"]
@@ -16,16 +16,16 @@ print(f'john[2] : {john}')
 john.extend([order[2][0:1]])
 print(john)
 
-#3) 정답 : [3, 2, 1, 4], [1,2,3,4]
+#3) 정답 : [1,2,3,4], None
 list_a = [3, 2, 1, 4]
 print(list_a)
-list_b = list_a.sort()
+list_b = list_a.sort()  #메서드는 반환값을 하지 않기때문에 'None'으로 나옴
 
 print(list_b)
 print(list_a, list_b)
 
 
-#4) 정답 : [1,3,3,5,7,9]
+#4) 정답 : None
 a = [5, 7, 3]
 b = [3, 9, 1]
 c = a + b
@@ -33,7 +33,7 @@ print(c)
 c = c.sort()
 print(c)
 
-#5) 정답 : [1, 2, 3, 4,1, 2, 3, 4]
+#5) 정답 : [1, 2, 3, 4, 1, 2, 3, 4]
 num = [1, 2, 3, 4]
 print(num * 2)
 
@@ -90,6 +90,7 @@ name_list = []
 for i in range(3):
     name=input('회원 입력 : ')
     name_list.append(name)
+    # name_list.append(input('회원입력:')) 로도 작성 가능
 print(f'회원 명단 : {name_list}')
 
 
@@ -173,3 +174,10 @@ while True:
         break
     else:
         print(f'\n틀렸습니다...다시 도전 ! \n')
+
+# n3=len(n2)
+# while True:
+#     rnd=randint(0,n3-1)
+#     print(n2[rnd])
+#     in_idiom=input('이 말의 사자성어는? :')
+

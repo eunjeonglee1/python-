@@ -34,5 +34,9 @@ print(s4)
 # s5={1,2,[4,3]}
 # TypeError: unhashable type: 'list'
 
+# hashable type => hashing
+# 객체를 식별할 수 있는 코드를 부여하여 테이블에 저장하는 방식 : (key,value)
+
 s5={1,2,(4,5)}
 print(s5)
+
