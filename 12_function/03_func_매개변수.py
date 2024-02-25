@@ -137,8 +137,7 @@ show_info2(id='123',age=30,name='hong')
 
 def my_func(a=1,*args,**kwargs):
     pass
-my_func(1,2,3,a=1,b=1)
-my_func(1,2,3,a=1,b=1)
+# my_func(1,2,3,a=1,b=1)
 
 # 함수 호출:
 # 위치인수와 키워드인수를 함께사용하는 경우, 위치인수는 앞으로 키워드인수는 뒤로 사용해야함
