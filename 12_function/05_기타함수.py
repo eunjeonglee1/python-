@@ -44,6 +44,8 @@ print(outfunc(10,30))
 # 람다함수는 함수 참조를 반환
 # 변수로 람다함수 객체를 받아서 함수호출
 # 람다를 변수이름대신에 사용한것
+# 전역변수를 사용
+# 문장에서 새로운 변수를 지정할 수 없다.
 
 f= lambda :1
 print(f())
@@ -98,3 +100,4 @@ def add_two(x,y):
     return x+y
 print(list(map(add_two,a,b)))
 print(list(map(lambda x,y:x+y,a,b)))
+
