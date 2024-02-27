@@ -13,7 +13,7 @@ print(chr(65))
 print(ord('A'))
 
 # divmod(),pow()
-# min(), max(), sum()
+# min(), max(), sum() : 통계
 
 print(max([1,2,3,4,-10]))
 print(min([1,2,3,4,-10]))
