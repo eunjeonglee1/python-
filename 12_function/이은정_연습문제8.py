@@ -13,7 +13,7 @@ print ("After:", x)
 
 #1-2) 정답: None
 def sotring_function(list_value):
-    return list_value.sort()
+    return list_value.sort()   #sort는 해당변수에서만 변경되고 return값이 없기때문에 None
 print(sotring_function([5,4,3,2,1]))
 
 #1-3) 정답: None
@@ -175,7 +175,7 @@ def message3():
 message3()
 
 
-#1-18) 정답: 15
+#1-18) 정답: 15 X > 아무것도 출력되지 않음
 def calc_rect_area(width, height):
     width = 3
     height = 5
@@ -192,7 +192,7 @@ country.append("Remove")
 print(country.remove("Remove"))
 
 
-#2. 정답:
+#2. 정답: factorial_calculator(n-1)
 def factorial_calculator(n):
     if n in (0, 1):
         return 1
@@ -212,14 +212,17 @@ def print_coin():
     return "비트코인"
 
 #4-2) 정답 :
-print(print_coin())
+print_coin()
 #4-3) 정답 :
 print(print_coin()*100)
+# for i in range(100):
+#     print_coin()
 
 #4-4) 정답 :
 def print_coins():
-    for a in range(101):
+    for a in range(100):
         print("비트코인")
+        # print_coin()
 
 #4-5) 정답 :
 def mul(x,y):
